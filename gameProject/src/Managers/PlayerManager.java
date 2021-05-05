@@ -22,7 +22,7 @@ public class PlayerManager implements PlayerService{
 	@Override
 	public void update(Player player) {
 		if (playerCheckManager.iAmNotRobot(player) == true) {
-			System.out.println("Registered : " + player.getFirstName() + " " + player.getLastName());
+			System.out.println("Updated : " + player.getFirstName() + " " + player.getLastName());
 		}
 		
 	}
@@ -30,7 +30,7 @@ public class PlayerManager implements PlayerService{
 	@Override
 	public void delete(Player player) {
 		if (playerCheckManager.iAmNotRobot(player) == true) {
-			System.out.println("Registered : " + player.getFirstName() + " " + player.getLastName());
+			System.out.println("Deleted : " + player.getFirstName() + " " + player.getLastName());
 		}
 		
 	}
